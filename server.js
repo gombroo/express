@@ -11,6 +11,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/views')));
 
 app.get('/', (req, res) => {
   res.show('index.html');
